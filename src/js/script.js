@@ -1,4 +1,4 @@
-// Accordion toggle functionality
+
 function toggleFaq(index) {
     const faqItems = document.querySelectorAll('.accordion-item');
     faqItems.forEach((item, idx) => {
@@ -14,7 +14,6 @@ function toggleFaq(index) {
     });
 }
 
-// Scroll card deck functionality
 function scrollCardDeck(direction) {
     const cardDeck = document.querySelector('.card-deck');
     const cardWidth = cardDeck.querySelector('.card').offsetWidth;
@@ -25,7 +24,7 @@ function scrollCardDeck(direction) {
 }
 
 
-// Intersection Observer for animations
+
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
