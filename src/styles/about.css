@@ -204,7 +204,7 @@ html, body {
     border: none;
     color: white;
     padding: 20px 40px; 
-    border-radius: 30px;
+    border-radius: 30px; 
     font-size: 18px;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -225,3 +225,18 @@ html, body {
                 0 0 40px rgba(255, 159, 243, 0.8);
     border: 2px solid rgba(255, 159, 243, 0.6);
   }
+ 
+
+
+.text-section, 
+.benefits-container, 
+.developer-description {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
