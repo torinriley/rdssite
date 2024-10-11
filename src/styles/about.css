@@ -77,13 +77,13 @@ html, body {
 }
 
 /* About section styling */
-.about-section {
+.about-section, .reflective-ai-section {
     background: rgba(40, 42, 58, 0.9);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;
-    text-align: left; /* Align text to the left */
+    margin-top: 30px;
+    text-align: left;
 }
 
 .main-heading {
@@ -94,27 +94,9 @@ html, body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient-animation 5s infinite; 
+    animation: gradient-animation 5s infinite;
     background-size: 300% 300%;
 }
-
-
-.text {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 20px 0;
-    text-align: left; 
-}
-
-.reflective-ai-section {
-    background: rgba(40, 42, 58, 0.9);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
-    margin-top: 30px;
-    text-align: left;
-}
-
 
 .sub-heading {
     font-size: 36px;
@@ -125,13 +107,93 @@ html, body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: left; 
+    text-align: left;
 }
+
+.sub-heading-two {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+
 
 .text {
     font-size: 18px;
     line-height: 1.6;
     margin: 20px 0;
     color: #f1f1f1;
-    text-align: left; 
+    text-align: left;
+}
+
+/* Timeline Section Styling */
+.timeline-section {
+    margin-top: 50px;
+    text-align: left;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Timeline line styling */
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 70px; /* Positioning the line to align with the dates */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #ff6b6b, #ff9ff3);
+    border-radius: 2px; /* Make the line slightly rounded */
+}
+
+/* Timeline item styling */
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+/* Date styling */
+.timeline-date {
+    flex: 0 0 100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f3a683;
+    transition: transform 0.3s ease;
+}
+
+/* Timeline content styling */
+.timeline-content {
+    background: rgba(40, 42, 58, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    margin-left: 20px;
+    transition: background 0.3s ease, box-shadow 0.4s ease-in-out;
+}
+
+/* Glow effect on hover */
+.timeline-content:hover {
+    box-shadow: 0 0 10px rgba(80, 64, 222, 0.7), 
+                0 0 20px rgba(255, 159, 243, 0.6), 
+                0 0 30px rgba(80, 64, 222, 0.9), 
+                0 0 40px rgba(255, 159, 243, 0.8);
+}
+
+/* Smooth scaling on hover */
+.timeline-content:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
 }
