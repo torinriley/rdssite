@@ -240,3 +240,45 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+
+.footer {
+    background: rgba(40, 42, 58, 0.9);
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: #ff6b6b; /* Match the theme color */
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: #f3a683; /* Lighter shade on hover */
+  }
+  
+  
