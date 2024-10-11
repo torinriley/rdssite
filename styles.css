@@ -237,17 +237,17 @@ html, body {
   text-align: center;
   box-shadow: 0 4px 15px rgba(80, 64, 222, 0.4), 
               0 0 10px rgba(80, 64, 222, 0.5), 
-              0 0 20px rgba(255, 159, 243, 0.4); /* Adding glow effect */
+              0 0 20px rgba(255, 159, 243, 0.4); 
 }
 
-/* Glow effect on hover */
+
 .button:hover {
   transform: translateY(-5px);
   background: linear-gradient(90deg, #5040de, #ff9ff3);
   box-shadow: 0 6px 20px rgba(80, 64, 222, 0.6), 
               0 0 20px rgba(80, 64, 222, 0.8), 
-              0 0 40px rgba(255, 159, 243, 0.8); /* Brighter glow on hover */
-  border: 2px solid rgba(255, 159, 243, 0.6); /* Optional glowing border */
+              0 0 40px rgba(255, 159, 243, 0.8);
+  border: 2px solid rgba(255, 159, 243, 0.6);
 }
 
 
