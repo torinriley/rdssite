@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    // Apply to all text block containers
+    
     document.querySelectorAll('.text-block-container').forEach((element) => {
         observer.observe(element);
     });
