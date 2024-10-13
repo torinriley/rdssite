@@ -241,14 +241,24 @@ html, body {
   border: 2px solid rgba(80, 64, 222, 0.8); 
   transition: box-shadow 1.2s cubic-bezier(0.42, 0, 0.58, 1), 
               border-color 1.2s cubic-bezier(0.42, 0, 0.58, 1);
+  animation: pulsate 3s infinite;
 }
 
-.text-section:hover {
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5), 
-              0 0 30px rgba(80, 64, 222, 0.8), 
-              0 0 60px rgba(255, 159, 243, 0.8); 
-  border: 2px solid rgba(255, 159, 243, 0.8);
+@keyframes pulsate {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
+                    0 0 40px rgba(255, 107, 107, 0.4), 
+                    0 0 60px rgba(243, 166, 131, 0.6), 
+                    0 0 80px rgba(255, 159, 243, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
+                    0 0 60px rgba(255, 107, 107, 0.6), 
+                    0 0 90px rgba(243, 166, 131, 0.8), 
+                    0 0 120px rgba(255, 159, 243, 1);
+    }
 }
+
 
 .button {
   background: linear-gradient(90deg, #5040de, #ff9ff3);
