@@ -1,0 +1,148 @@
+.morphism-container {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(12px);  
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);  
+    width: 70%;  
+    height: 65vh; 
+    margin: 15vh auto;  
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.window-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);  
+    border-radius: 15px 15px 0 0;
+}
+
+
+.mac-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background-color: #ff605c; }
+.yellow { background-color: #ffbd44; }
+.green { background-color: #00ca4e; }
+
+.window-title {
+    color: rgba(255, 255, 255, 0.9);  
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.chat-container {
+    background: rgba(0, 0, 0, 0.25);  
+    border-radius: 0;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.chat-line.user {
+    background-color: rgba(255, 255, 255, 0.15); 
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 35%; 
+    align-self: flex-end;  
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+}
+
+
+.chat-line.ai-thinking {
+    max-width: 33%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.chat-line.ai-thinking p {
+    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.loading-dots {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.title-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
+
+.small-logo img {
+    width: 30px; 
+    height: auto;
+}
+
+
+.window-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
