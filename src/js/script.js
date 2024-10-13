@@ -61,62 +61,62 @@ document.addEventListener("DOMContentLoaded", () => {
     const typingText = document.querySelector(".typing-text");
     const thinkingSection = document.querySelector(".loading-section");
 
-    // Create caret element dynamically
+    
     const caretDot = document.createElement("div");
     caretDot.classList.add("caret-dot");
 
-    // Content to be typed out
+    
     const part1 = `RDS AI is an open-source project that pushes the boundaries of AI, 
 enabling machines to adapt, learn, and evolve based on `;
-    const part2 = `reflective dialogue systems.`; // Gradient part
+    const part2 = `reflective dialogue systems.`;
 
-    // Create a span for the gradient-styled text
+    
     const gradientSpan = document.createElement('span');
     gradientSpan.classList.add('gradient-text');
 
-    // Simulate typing effect
+    
     function typeText(text, element, delay = 50, callback) {
         let index = 0;
         element.style.display = "block";
         function type() {
             if (index < text.length) {
                 element.textContent += text.charAt(index);
-                element.appendChild(caretDot);  // Re-append caret after each character
+                element.appendChild(caretDot);  
                 index++;
                 setTimeout(type, delay);
             } else if (callback) {
-                callback();  // Call the callback function (to start typing part2) after part1
+                callback();  
             }
         }
         type();
     }
 
-    // Typing part2 with gradient
+    
     function typeGradientText(text, element, delay = 50, callback) {
         let index = 0;
         function type() {
             if (index < text.length) {
                 element.textContent += text.charAt(index);
-                element.appendChild(caretDot);  // Re-append caret after each character
+                element.appendChild(caretDot); 
                 index++;
                 setTimeout(type, delay);
             } else {
-                caretDot.classList.add("caret-fade-out"); // Fade-out caret after typing is done
+                caretDot.classList.add("caret-fade-out"); 
             }
         }
         type();
     }
 
-    // Show the thinking animation for 3 seconds, then type the text
+    
     setTimeout(() => {
-        thinkingSection.style.display = "none"; // Hide thinking animation
+        thinkingSection.style.display = "none";
         
-        // First, type part1
+        
         typeText(part1, typingText, 50, () => {
-            // After part1, start typing part2 (with gradient)
-            typingText.appendChild(gradientSpan); // Add the gradient span to the DOM
-            typeGradientText(part2, gradientSpan); // Type the gradient text
+           
+            typingText.appendChild(gradientSpan);
+            typeGradientText(part2, gradientSpan);
         });
 
-    }, 3000); // Wait for 3 seconds
+    }, 3000);
 });
