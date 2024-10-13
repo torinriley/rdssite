@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RDS AI</title>
     <link rel="stylesheet" href="src/styles/rds.css">
+    <link rel="stylesheet" href="src/styles/button.css">
+
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
@@ -23,10 +25,24 @@
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="large-text">Welcome to RDS AI</h1>
-            <p class="intro-text">Discover the cutting-edge technology behind Reflective Dialogue System (RDS) AI.</p>
         </div>
 
-        <!-- Text Block Section with Learn More Buttons -->
+        
+<div class="loading-section">
+    <div class="loading-container">
+        <p class="thinking-text">Thinking</p>
+        <div class="loading-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+</div>
+
+<div class="typing-text-container">
+    <div class="typing-text"></div>
+</div>
+        
         <div class="text-block-section">
             <div class="text-block-container">
                 <h2 class="text-block-title">What is RDS AI?</h2>
@@ -113,10 +129,14 @@
                 <p class="open-source-text">
                     RDS AI is an open-source project designed to push the boundaries of artificial intelligence and machine learning.
                     We believe in fostering a community-driven approach to innovation, allowing developers, researchers, and AI enthusiasts to contribute 
-                    to the evolution of Reflective Dialogue Systems. 
+                    to the evolution of Reflective Dialogue Systems.
                     <br><br>
-                    Visit our <a href="https://github.com/RDSaiPlatforms" class="open-source-link">GitHub repository</a> to learn more and get involved.
+                    Visit our GitHub repository to learn more and get involved.
+                    <br><br>
+
                 </p>
+                <!-- Button moved outside the paragraph -->
+                <a href="https://github.com/RDSaiPlatforms" class="open-source-button">GitHub repository</a>
             </div>
         </div>
 

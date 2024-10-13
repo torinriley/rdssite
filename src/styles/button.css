@@ -1,0 +1,70 @@
+
+.open-source-button {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(135deg, #ff6b6b, #ff9ff3, #6a89cc, #38ada9);
+    background-size: 200% 200%; 
+    border-radius: 50px; 
+    box-shadow: 0 10px 25px rgba(255, 159, 243, 0.4), 
+                0 4px 10px rgba(255, 159, 243, 0.6);
+    transition: all 0.5s ease, background-position 1.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.open-source-button:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 10%);
+    background-size: 50% 50%;
+    animation: shine-effect 5s infinite linear;
+    transition: opacity 0.4s;
+}
+
+@keyframes shine-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.open-source-button:hover {
+    background-position: 100% 0;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(255, 159, 243, 0.8), 
+                0 10px 25px rgba(80, 64, 222, 0.8), 
+                0 0 30px rgba(80, 64, 222, 1);
+}
+
+.open-source-button:hover:before {
+    opacity: 0.7;
+}
+
+
+.open-source-button:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50px;
+    background: rgba(255, 159, 243, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.open-source-button:hover:after {
+    opacity: 0.3; 
+}
