@@ -243,42 +243,61 @@ html, body {
 
 
 
-
 .footer {
-    background: rgba(40, 42, 58, 0.9);
-    color: #f1f1f1;
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-  }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-links li {
-    margin: 0 15px;
-  }
-  
-  .footer-links li a {
-    text-decoration: none;
-    color: #ff6b6b; /* Match the theme color */
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-  .footer-links li a:hover {
-    color: #f3a683; /* Lighter shade on hover */
-  }
-  
+  background-color: #1a1a1a; /* Dark background */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: #f0f0f0; /* Light text color */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between the logo and the text */
+}
+
+.footer-links {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f0f0f0; /* Light text color for links */
+}
+
+.footer-links a:hover {
+  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-logo {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px;
+  vertical-align: middle; /* Align the image vertically with text */
+  filter: invert(100%); /* Invert the logo color for dark theme */
+}
+
+.github-link {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 10px; /* Space between the logo and text */
+}
+
+.footer-content p, .footer-links, .github-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
   
