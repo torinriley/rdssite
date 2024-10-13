@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>RDS AI</title>
     <link rel="stylesheet" href="src/styles/rds.css">
     <link rel="icon" href="favicon.png" type="image/png">
-</head>x
+</head>
 <body>
     <nav class="solid-navbar">
         <div class="navbar-logo">
@@ -20,14 +20,13 @@
         </ul>
     </nav>
 
-    <!-- Hero Section with All Content -->
     <section class="hero-section">
         <div class="hero-content">
             <h1 class="large-text">Welcome to RDS AI</h1>
             <p class="intro-text">Discover the cutting-edge technology behind Reflective Dialogue System (RDS) AI.</p>
         </div>
 
-        <!-- Text Block Section  -->
+        <!-- Text Block Section with Learn More Buttons -->
         <div class="text-block-section">
             <div class="text-block-container">
                 <h2 class="text-block-title">What is RDS AI?</h2>
@@ -35,6 +34,7 @@
                     RDS AI is a revolutionary approach to artificial intelligence that integrates self-reflective algorithms and dynamic memory caching.
                     It enables machines to adapt and learn from their own behavior, bringing us closer to true AI self-awareness.
                 </p>
+                <button class="learn-more-btn" data-modal="modal1">Learn More</button>
             </div>
             <div class="text-block-container">
                 <h2 class="text-block-title">How Does It Work?</h2>
@@ -42,6 +42,7 @@
                     By using reflective AI techniques, RDS AI can analyze its interactions in real-time. This allows the system to optimize its responses
                     and improve over time, delivering more personalized and contextually relevant experiences.
                 </p>
+                <button class="learn-more-btn" data-modal="modal2">Learn More</button>
             </div>
             <div class="text-block-container">
                 <h2 class="text-block-title">Real-World Applications</h2>
@@ -49,40 +50,73 @@
                     RDS AI can be applied across various fields, including customer service, education, and content creation, providing
                     intelligent and adaptive solutions that enhance user experiences.
                 </p>
+                <button class="learn-more-btn" data-modal="modal3">Learn More</button>
             </div>
         </div>
 
-        <!-- Rotating Card Component -->
-        <div class="card-showcase">
-            <div class="rotating-card">
-                <div class="card-front">
-                    <h3>Performance</h3>
-                    <p>Experience lightning-fast processing with dynamic memory caching.</p>
-                </div>
-                <div class="card-back">
-                    <h3>Details</h3>
-                    <p>Performance metrics are optimized for speed and scalability, adapting to real-time data access patterns.</p>
-                </div>
+        <!-- Modals for each Learn More button -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>More About RDS AI</h2>
+                <p>
+                    RDS AI is at the forefront of AI innovation, integrating state-of-the-art reflective algorithms that enhance learning and self-awareness in machines.
+                    With RDS AI, machines are no longer simply processing input data and providing pre-programmed responses.
+                    <br><br>
+                    By incorporating advanced memory systems, RDS AI allows machines to 'remember' past interactions and improve based on the cumulative knowledge gathered over time.
+                    This self-reflective capability not only optimizes performance but also enables RDS AI to adapt, learn, and evolve autonomously, 
+                    moving closer to true artificial self-awareness.
+                </p>
             </div>
-            <div class="rotating-card">
-                <div class="card-front">
-                    <h3>Adaptability</h3>
-                    <p>Adaptive learning for personalized user experiences.</p>
-                </div>
-                <div class="card-back">
-                    <h3>Details</h3>
-                    <p>RDS AI continuously learns from interactions to improve and deliver contextually relevant responses.</p>
-                </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>How RDS AI Works</h2>
+                <p>
+                    Using advanced AI techniques, RDS AI continuously monitors its interactions, dynamically adjusting its responses based on past feedback and stored knowledge.
+                    <br><br>
+                    RDS AI employs dynamic memory caching and self-reflection algorithms to analyze and learn from every interaction. 
+                    It categorizes memories by importance and emotional context, allowing the AI to deliver relevant responses while saving computational power.
+                    <br><br>
+                    This constant cycle of analysis, learning, and adjustment allows RDS AI to deliver highly personalized and contextually appropriate interactions, 
+                    making it a powerful tool for a wide range of applications, from personal assistants to large-scale enterprise AI solutions.
+                </p>
             </div>
-            <div class="rotating-card">
-                <div class="card-front">
-                    <h3>Human-Like Interaction</h3>
-                    <p>Delivers a natural conversational experience.</p>
-                </div>
-                <div class="card-back">
-                    <h3>Details</h3>
-                    <p>Reflective AI techniques enable nuanced and human-like dialogue with users.</p>
-                </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Real-World Applications of RDS AI</h2>
+                <p>
+                    RDS AI is being applied across multiple industries, transforming the way businesses and individuals interact with technology:
+                    <br><br>
+                    <strong>Customer Service:</strong> RDS AI offers a highly personalized customer experience by remembering past conversations and adapting its responses accordingly, 
+                    enhancing satisfaction while reducing the need for repetitive explanations.
+                    <br><br>
+                    <strong>Healthcare:</strong> In the healthcare sector, RDS AI assists doctors and nurses by maintaining detailed, memory-rich records of patient history, 
+                    improving the accuracy and efficiency of care.
+                    <br><br>
+                    <strong>Education:</strong> RDS AI acts as a personal tutor, providing tailored learning experiences that adjust to the student's progress, learning pace, and needs.
+                    <br><br>
+                    As more sectors adopt AI technology, RDS AI will continue to innovate and find new ways to integrate human-like interactions into everyday processes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Open Source Section -->
+        <div class="open-source-section">
+            <div class="open-source-content">
+                <h2 class="large-text-2">RDS AI is Open Source</h2>
+                <p class="open-source-text">
+                    RDS AI is an open-source project designed to push the boundaries of artificial intelligence and machine learning.
+                    We believe in fostering a community-driven approach to innovation, allowing developers, researchers, and AI enthusiasts to contribute 
+                    to the evolution of Reflective Dialogue Systems. 
+                    <br><br>
+                    Visit our <a href="https://github.com/RDSaiPlatforms" class="open-source-link">GitHub repository</a> to learn more and get involved.
+                </p>
             </div>
         </div>
 

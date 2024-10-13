@@ -95,6 +95,19 @@ html, body {
     background-size: 300% 300%;
 }
 
+.large-text-2 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 6s infinite;
+    background-size: 300% 300%;
+}
+
+
+
 
 .intro-text {
     font-size: 22px;
@@ -180,10 +193,7 @@ html, body {
 }
 
 
-.text-block-container:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 8px 30px rgba(80, 64, 222, 0.7);
-}
+
 
 
 @keyframes gradient-animation {
@@ -197,7 +207,6 @@ html, body {
     0% { opacity: 0; transform: translateY(50px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-/* Rotating Card Styling */
 .card-showcase {
     display: flex;
     justify-content: center;
@@ -216,7 +225,7 @@ html, body {
     transform-style: preserve-3d;
     transition: transform 0.8s;
     cursor: pointer;
-    margin: 0 30px; /* Ensure even spacing between cards */
+    margin: 0 30px;
 }
 
 .rotating-card:hover {
@@ -254,9 +263,9 @@ html, body {
     border-radius: 15px;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
     margin-top: 200px;
-    max-width: 600px; /* Set a smaller width */
-    margin-left: auto; /* Center the section horizontally */
-    margin-right: auto; /* Center the section horizontally */
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 
@@ -290,11 +299,11 @@ html, body {
 }
 
 .footer {
-    background-color: #1a1a1a; /* Dark background */
+    background-color: #1a1a1a; 
     padding: 20px;
     text-align: center;
     position: relative;
-    color: #f0f0f0; /* Light text color */
+    color: #f0f0f0; 
   }
   
   .footer-content {
@@ -302,7 +311,7 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 15px; /* Space between the logo and the text */
+    gap: 15px;
   }
   
   .footer-links {
@@ -318,7 +327,7 @@ html, body {
   
   .footer-links a {
     text-decoration: none;
-    color: #f0f0f0; /* Light text color for links */
+    color: #f0f0f0;
   }
   
   .footer-links a:hover {
@@ -328,16 +337,16 @@ html, body {
   }
   
   .footer-logo {
-    width: 24px; /* Adjust the size as needed */
+    width: 24px; 
     height: 24px;
-    vertical-align: middle; /* Align the image vertically with text */
-    filter: invert(100%); /* Invert the logo color for dark theme */
+    vertical-align: middle;
+    filter: invert(100%); 
   }
   
   .github-link {
     display: inline-block;
     text-decoration: none;
-    margin-right: 10px; /* Space between the logo and text */
+    margin-right: 10px; 
   }
   
   .footer-content p, .footer-links, .github-link {
@@ -346,3 +355,137 @@ html, body {
     margin: 0;
   }
   
+
+
+.open-source-section {
+    background: rgba(26, 26, 46, 0.7); 
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 3rem;
+    text-align: center;
+    color: #ecf0f1;  
+    max-width: 90%; 
+    margin: 15rem auto;  
+    border-radius: 15px;  
+    position: relative;  
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    animation: pulsate 3s infinite;  
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
+                    0 0 40px rgba(255, 107, 107, 0.4), 
+                    0 0 60px rgba(243, 166, 131, 0.6), 
+                    0 0 80px rgba(255, 159, 243, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
+                    0 0 60px rgba(255, 107, 107, 0.6), 
+                    0 0 90px rgba(243, 166, 131, 0.8), 
+                    0 0 120px rgba(255, 159, 243, 1);
+    }
+}
+
+.open-source-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;  
+}
+
+.open-source-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;  
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.open-source-link {
+    color: #f3a683;  
+    text-decoration: underline;
+}
+
+.open-source-link:hover {
+    color: #ff9ff3;  
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    overflow: auto; 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #1a1a2e;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+    text-align: left; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #f3a683;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.learn-more-btn {
+    border: 2px solid transparent;
+    background: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.learn-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+    z-index: -1;
+    transition: all 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.learn-more-btn:hover::before {
+    transform: scaleX(1);
+}
+
+.learn-more-btn:hover {
+    color: white;
+}
