@@ -8,21 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.timeline-content').forEach((element) => {
-        observer.observe(element);
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-
     document.querySelectorAll('.text-block-container').forEach((element) => {
         observer.observe(element);
     });
@@ -119,4 +104,29 @@ enabling machines to adapt, learn, and evolve based on `;
         });
 
     }, 3000);
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineSection = document.querySelector(".timeline");
+
+    
+    const options = {
+        root: null, 
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                setTimeout(() => {
+                    entry.target.classList.add('animate-timeline');
+                }, 0); 
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    observer.observe(timelineSection);
 });

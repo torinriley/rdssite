@@ -145,7 +145,6 @@ html, body {
 }
 
 
-
 .timeline:before {
   content: '';
   position: absolute;
@@ -156,9 +155,12 @@ html, body {
   background: linear-gradient(180deg, #ff6b6b, #ff9ff3);
   border-radius: 2px;
   height: 0; 
-  animation: fillLine 3s ease-out forwards; 
+  animation: none;
 }
 
+.animate-timeline:before {
+  animation: fillLine 3s ease-out forwards;
+}
 
 @keyframes fillLine {
   0% {
@@ -168,6 +170,7 @@ html, body {
       height: 100%;
   }
 }
+
 
 .timeline-item {
     display: flex;
