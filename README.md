@@ -1,5 +1,5 @@
 [![Deployment](https://github.com/torinriley/rdssite-html-/actions/workflows/static.yml/badge.svg)](https://github.com/torinriley/rdssite-html-/actions/workflows/static.yml)
-
+[![CodeQL](https://github.com/torinriley/rdssite/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/torinriley/rdssite/actions/workflows/github-code-scanning/codeql)
 # RDS AI - Official Website
 
 Welcome to the **official open-source website** for **Reflective AI** and **RDS Light**, a cutting-edge project designed to push the boundaries of machine learning, memory systems, and self-reflective algorithms.
