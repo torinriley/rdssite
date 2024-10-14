@@ -35,120 +35,48 @@
               Reflective AI represents a new frontier in artificial intelligence, designed to push the boundaries of machine learning and cognition. By integrating advanced memory systems and self-reflective algorithms, Reflective AI enables systems to learn not only from external inputs but from their own internal processing. With its ability to dynamically store, categorize, and retrieve memories based on emotions and context, Reflective AI brings us closer to true artificial self-awareness. This technology opens doors to more intelligent, adaptive, and human-like interactions, creating AI that not only responds but evolves based on past experiences and deeper reflections.
           </p>
       </div>
-
-
       <div class="card-deck-container">
         <button class="arrow-button arrow-left" onclick="scrollCardDeck('left')">&larr;</button>
         <div class="card-deck">
-    
-            <!-- Performance Card -->
             <div class="card">
                 <div class="card-logo">
                     <img src="src/styles/assets/performance.png" alt="Performance Logo">
                 </div>
-                <div class="expand-button">
-                    <button onclick="openModal('modal-performance')">More</button>
-                </div>
                 <div class="card-content">
                     <h3>Performance</h3>
-                    <div class="card-text">During early testing, one of the first observed breakthroughs with RDS is the ability to generate responses at the same level as OpenAI’s o1-preview model.</div>
+                    <div class="card-text">During early testing, one of the first observed breakthroughs with RDS is the ability to generate responses at the same level as OpenAI’s o1-preview model. The key difference, the testing model was based on GPT-3.5 Turbo.</div>
                 </div>
             </div>
-    
-            <!-- Modal for Performance Card -->
-            <div id="modal-performance" class="modal" onclick="closeModalOutside(event, 'modal-performance')">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-performance')">&times;</span>
-                    <div class="card-logo">
-                        <img src="src/styles/assets/performance.png" alt="Performance Logo">
-                    </div>
-                    <h3>Performance - Full Details</h3>
-                    <p>RDS AI has demonstrated remarkable performance breakthroughs during testing...</p>
-                </div>
-            </div>
-    
-            <!-- Personalization Card -->
             <div class="card">
                 <div class="card-logo">
                     <img src="src/styles/assets/personalization.png" alt="Personalization Logo">
                 </div>
-                <div class="expand-button">
-                    <button onclick="openModal('modal-personalization')">More</button>
-                </div>
                 <div class="card-content">
                     <h3>Personalization</h3>
-                    <div class="card-text">The memory system in RDS naturally stores relevant information about each interaction, allowing it to be retrieved later.</div>
+                    <div class="card-text">The memory system in RDS naturally stores relevant information about each interaction, allowing it to be retrieved later. This means RDS can accurately remember every detail without expanding the context window.</div>
                 </div>
             </div>
-    
-            <!-- Modal for Personalization Card -->
-            <div id="modal-personalization" class="modal" onclick="closeModalOutside(event, 'modal-personalization')">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-personalization')">&times;</span>
-                    <div class="card-logo">
-                        <img src="src/styles/assets/personalization.png" alt="Personalization Logo">
-                    </div>
-                    <h3>Personalization - Full Details</h3>
-                    <p>RDS AI’s memory system provides unparalleled personalization capabilities...</p>
-                </div>
-            </div>
-    
-            <!-- Memory Caching Card -->
             <div class="card">
                 <div class="card-logo">
                     <img src="src/styles/assets/memory.png" alt="Memory Caching Logo">
                 </div>
-                <div class="expand-button">
-                    <button onclick="openModal('modal-memory')">More</button>
-                </div>
                 <div class="card-content">
                     <h3>Memory Caching</h3>
-                    <div class="card-text">RDS Light introduces dynamic memory caching, enabling any LLM to create, store, and retrieve memories...</div>
+                    <div class="card-text">RDS Light introduces dynamic memory caching, enabling any LLM to create, store, and retrieve memories, enhancing conversational coherence without requiring a large context window.</div>
                 </div>
             </div>
-    
-            <!-- Modal for Memory Caching Card -->
-            <div id="modal-memory" class="modal" onclick="closeModalOutside(event, 'modal-memory')">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-memory')">&times;</span>
-                    <div class="card-logo">
-                        <img src="src/styles/assets/memory.png" alt="Memory Caching Logo">
-                    </div>
-                    <h3>Memory Caching - Full Details</h3>
-                    <p>The dynamic memory caching technology in RDS Light is a revolutionary step for LLMs...</p>
-                </div>
-            </div>
-    
-            <!-- Real-World Integration Card -->
             <div class="card">
                 <div class="card-logo">
                     <img src="src/styles/assets/real-world.png" alt="Real World Integration Logo">
                 </div>
-                <div class="expand-button">
-                    <button onclick="openModal('modal-realworld')">More</button>
-                </div>
                 <div class="card-content">
                     <h3>Real-World Integration</h3>
-                    <div class="card-text">Reflective AI can be deployed in environments requiring responsive and adaptive AI...</div>
-                </div>
-            </div>
-    
-            <!-- Modal for Real-World Integration Card -->
-            <div id="modal-realworld" class="modal" onclick="closeModalOutside(event, 'modal-realworld')">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal('modal-realworld')">&times;</span>
-                    <div class="card-logo">
-                        <img src="src/styles/assets/real-world.png" alt="Real World Integration Logo">
-                    </div>
-                    <h3>Real-World Integration - Full Details</h3>
-                    <p>RDS AI’s Reflective capabilities make it a powerful tool for real-world applications...</p>
+                    <div class="card-text">Reflective AI can be deployed in environments requiring responsive and adaptive AI, pushing the boundaries of existing machine learning applications.</div>
                 </div>
             </div>
         </div>
         <button class="arrow-button arrow-right" onclick="scrollCardDeck('right')">&rarr;</button>
     </div>
-
-
 
         <h2 class="large-gradient-text">RDS Light</h2>
         <div class="benefits-container">
