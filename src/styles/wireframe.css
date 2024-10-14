@@ -147,4 +147,45 @@
 }
 
 
+/* User Input Box */
+.user-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    max-width: 100%; /* Take up one-third of the window width */
+    margin-left: 40px; /* Center the input box horizontally */
+    margin-right: 40px;
+}
 
+.user-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    margin-right: 10px;
+}
+
+.user-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.send-button {
+    background-color: #6a89cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0.6;
+    transition: background-color 0.3s ease;
+}
+
+/* Removed the hover effect */

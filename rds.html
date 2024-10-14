@@ -60,7 +60,7 @@
             <div class="text-block-container">
                 <h2 class="text-block-title">How Does It Work?</h2>
                 <p class="text-block-content">
-                    By using reflective AI techniques, RDS AI can analyze its interactions in real-time. This allows the system to optimize its responses
+                    By using reflective AI techniques integrated into LLM's, RDS AI can analyze its interactions in real-time. This allows the system to optimize its responses
                     and improve over time, delivering more personalized and contextually relevant experiences.
                 </p>
                 <button class="learn-more-btn" data-modal="modal2">Learn More</button>
@@ -75,20 +75,30 @@
             </div>
         </div>
 
-        <!-- Modals for each Learn More button -->
+        
         <div id="modal1" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>More About RDS AI</h2>
                 <p>
-                    RDS AI is at the forefront of AI innovation, integrating state-of-the-art reflective algorithms that enhance learning and self-awareness in machines.
-                    With RDS AI, machines are no longer simply processing input data and providing pre-programmed responses.
-                    <br><br>
-                    By incorporating advanced memory systems, RDS AI allows machines to 'remember' past interactions and improve based on the cumulative knowledge gathered over time.
-                    This self-reflective capability not only optimizes performance but also enables RDS AI to adapt, learn, and evolve autonomously, 
-                    moving closer to true artificial self-awareness.
+                    RDS AI is a versatile framework designed to integrate with existing large language models (LLMs) like GPT, elevating their capabilities beyond standard responses. By leveraging cutting-edge reflective algorithms, RDS AI enhances learning, memory retention, and self-awareness in machines.
+                </p>
+                <p>
+                    Unlike traditional models that rely solely on immediate input and pre-programmed responses, RDS AI incorporates advanced memory caching systems. This enables machines to 'remember' and retrieve relevant information from past interactions, resulting in more contextual and personalized responses. Whether it's recalling user preferences or adapting to evolving conversations, RDS AI ensures a seamless and intelligent interaction.
+                </p>
+                <p>
+                    Key performance benefits include:
+                    <ul>
+                        <li><strong>Enhanced Efficiency:</strong> RDS AI reduces computational overhead by optimizing response accuracy without the need for large context windows.</li>
+                        <li><strong>Faster Processing:</strong> Thanks to reflective memory, RDS AI can quickly retrieve and apply past knowledge, improving response times and decision-making.</li>
+                        <li><strong>Scalability:</strong> Easily integrated into existing LLM architectures, RDS AI supports scalability for real-world applications like customer service, healthcare, and dynamic content generation.</li>
+                    </ul>
+                </p>
+                <p>
+                    RDS AI enables models to adapt, learn, and evolve autonomously, pushing the boundaries of what is possible with large language models. With this framework, developers can achieve superior AI performance with minimal adjustments to existing models.
                 </p>
             </div>
+          
         </div>
 
         <div id="modal2" class="modal">
@@ -159,6 +169,11 @@
                         <div class="dot"></div>
                     </div>
                 </div>
+            </div>
+            <!-- User Input Box (just for UI purposes) -->
+            <div class="user-input-container">
+                <input type="text" class="user-input" placeholder="Type a message..." disabled>
+                <button class="send-button" disabled>Send</button>
             </div>
         </div>
 
