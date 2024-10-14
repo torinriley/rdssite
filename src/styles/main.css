@@ -383,11 +383,11 @@ html, body {
 
 
 .footer {
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   padding: 20px;
   text-align: center;
   position: relative;
-  color: #f0f0f0; /* Light text color */
+  color: #f0f0f0; 
 }
 
 .footer-content {
@@ -395,7 +395,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Space between the logo and the text */
+  gap: 15px; 
 }
 
 .footer-links {
@@ -411,7 +411,7 @@ html, body {
 
 .footer-links a {
   text-decoration: none;
-  color: #f0f0f0; /* Light text color for links */
+  color: #f0f0f0; 
 }
 
 .footer-links a:hover {
@@ -421,16 +421,16 @@ html, body {
 }
 
 .footer-logo {
-  width: 24px; /* Adjust the size as needed */
+  width: 24px; 
   height: 24px;
-  vertical-align: middle; /* Align the image vertically with text */
-  filter: invert(100%); /* Invert the logo color for dark theme */
+
+  filter: invert(100%); 
 }
 
 .github-link {
   display: inline-block;
   text-decoration: none;
-  margin-right: 10px; /* Space between the logo and text */
+  margin-right: 10px;
 }
 
 .footer-content p, .footer-links, .github-link {
