@@ -438,3 +438,80 @@ html, body {
   vertical-align: middle;
   margin: 0;
 }
+
+
+/* Card Container */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Expand Button */
+.expand-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.expand-button button {
+  background: linear-gradient(90deg, #6a89cc, #ff9ff3);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(80, 64, 222, 0.5);
+  transition: all 0.3s ease;
+}
+
+.expand-button button:hover {
+  background: linear-gradient(90deg, #ff9ff3, #6a89cc);
+  transform: scale(1.05);
+}
+
+
+/* Modal Structure */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 800px;
+  position: relative;
+  color: black;
+}
+
+/* Modal Close Button */
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
