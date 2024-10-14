@@ -136,7 +136,6 @@
                 </p>
             </div>
         </div>
-
         <div class="morphism-container">
             <div class="window-header">
                 <div class="mac-buttons">
@@ -145,7 +144,6 @@
                     <span class="button green"></span>
                 </div>
         
-            
                 <div class="title-logo-container">
                     <span class="window-title">RDS ai</span>
                     <div class="small-logo">
@@ -153,24 +151,30 @@
                     </div>
                 </div>
             </div>
-            
+        
             <div class="chat-container">
-                
+                <!-- User Chat Line -->
                 <div class="chat-line user">
                     <p>What can you tell me about reflective AI?</p>
                 </div>
         
-                
-                <div class="chat-line ai-thinking">
-                    <p>Thinking</p>
-                    <div class="loading-dots">
+                <!-- AI Thinking Line -->
+                <div class="chat-line ai-thinking" id="ai-thinking-line">
+                    <p id="thinking-text">Thinking</p>
+                    <div class="loading-dots" id="loading-dots">
                         <div class="dot"></div>
                         <div class="dot"></div>
                         <div class="dot"></div>
                     </div>
                 </div>
+        
+                <!-- AI Answer Line (Initially hidden) -->
+                <div class="chat-line ai-answer" id="ai-answer" style="display: none;">
+                    <p id="ai-answer-text"></p>
+                </div>
             </div>
-            <!-- User Input Box (just for UI purposes) -->
+        
+            
             <div class="user-input-container">
                 <input type="text" class="user-input" placeholder="Type a message..." disabled>
                 <button class="send-button" disabled>Send</button>
@@ -186,11 +190,11 @@
                     We believe in fostering a community-driven approach to innovation, allowing developers, researchers, and AI enthusiasts to contribute 
                     to the evolution of Reflective Dialogue Systems.
                     <br><br>
-                    Visit our GitHub repository to learn more and get involved.
+                    Open Source starting 2025. Visit our GitHub repository to learn more and get involved.
                     <br><br>
 
                 </p>
-                <!-- Button moved outside the paragraph -->
+            
                 <a href="https://github.com/RDSaiPlatforms" class="open-source-button">GitHub repository</a>
             </div>
         </div>
@@ -218,5 +222,6 @@
     </footer>
 
     <script src="src/js/script.js"></script>
+    
 </body>
 </html>
