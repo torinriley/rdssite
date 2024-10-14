@@ -184,23 +184,23 @@ html, body {
   margin: 40px auto;
   max-width: 800px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1); /* Lighter, more transparent background */
-  backdrop-filter: blur(15px); /* Adds a blur effect behind the container */
-  -webkit-backdrop-filter: blur(15px); /* Safari support */
-  border-radius: 20px; /* More rounded corners for a smoother effect */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
+  border-radius: 20px;
   text-align: left;
-  color: rgba(255, 255, 255, 0.9); /* Slightly transparent text to fit the glass effect */
+  color: rgba(255, 255, 255, 0.9); 
 }
 
 .developer-description {
   margin: 40px auto;
   max-width: 800px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1); /* Lighter, more transparent background */
-  backdrop-filter: blur(15px); /* Adds a blur effect behind the container */
-  -webkit-backdrop-filter: blur(15px); /* Safari support */
-  border-radius: 20px; /* Slightly more rounded corners */
-  color: rgba(255, 255, 255, 0.9); /* Light, slightly transparent text */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.9);
   text-align: left;
   opacity: 0;
   transform: translateY(50px);
