@@ -241,66 +241,6 @@ html, body {
   transform: translateY(0);
 }
 
-
-
-.footer {
-  background-color: #1a1a1a;
-  padding: 20px;
-  text-align: center;
-  position: relative;
-  color: #f0f0f0; 
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 15px; 
-}
-
-.footer-links {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin-right: 15px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #f0f0f0; 
-}
-
-.footer-links a:hover {
-  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.footer-logo {
-  width: 24px; 
-  height: 24px;
-  vertical-align: middle; 
-  filter: invert(100%); 
-}
-
-.github-link {
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 10px; 
-}
-
-.footer-content p, .footer-links, .github-link {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-}
-
-  /* CTA Section */
 .cta-section {
   margin: 50px auto;
   padding: 40px;
