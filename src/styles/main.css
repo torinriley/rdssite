@@ -240,25 +240,9 @@ html, body {
   text-align: left;
   opacity: 1;
   transform: translateY(0);
-  transition: box-shadow 1.2s cubic-bezier(0.42, 0, 0.58, 1), 
-              border-color 1.2s cubic-bezier(0.42, 0, 0.58, 1);
-  animation: pulsate 3s infinite;
-}
-
-@keyframes pulsate {
-    0%, 100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
-                    0 0 40px rgba(255, 107, 107, 0.4), 
-                    0 0 60px rgba(243, 166, 131, 0.6), 
-                    0 0 80px rgba(255, 159, 243, 0.8);
+  box-shadow: 0 0 120px rgba(255, 159, 243, 1);
     }
-    50% {
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
-                    0 0 60px rgba(255, 107, 107, 0.6), 
-                    0 0 90px rgba(243, 166, 131, 0.8), 
-                    0 0 120px rgba(255, 159, 243, 1);
-    }
-}
+ 
 
 
 .button {
@@ -355,13 +339,13 @@ html, body {
   margin-top: 100px;
   max-width: 800px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.1); /* More transparent, lighter background */
-  backdrop-filter: blur(15px); /* Glassmorphism blur effect */
-  -webkit-backdrop-filter: blur(15px); /* Safari support */
-  border-radius: 20px; /* Slightly more rounded corners */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px); 
+  border-radius: 20px;
   font-size: 18px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9); /* Lighter text color for the glass effect */
+  color: rgba(255, 255, 255, 0.9);
   text-align: left;
   opacity: 1;
   transform: translateY(0);
@@ -519,3 +503,146 @@ html, body {
   text-decoration: none;
   cursor: pointer;
 }
+.comparison-section {
+  display: flex;
+  justify-content: space-between; 
+  padding: 300px;
+  margin-top: 50px;
+}
+
+.comparison-column {
+  flex: 0.7;
+  max-width: 400px; 
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.unmodified-column {
+  background: rgba(40, 42, 58, 0.5); 
+  color: #f1f1f1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.rds-column {
+  background: rgba(40, 42, 58, 0.5); 
+  color: #fff;
+  animation: pulsate 3s infinite;  
+}
+
+@keyframes pulsate {
+  0%, 100% {
+      box-shadow: 0 0 15px rgba(255, 159, 243, 0.5), 
+                  0 0 30px rgba(80, 64, 222, 0.5), 
+                  0 0 45px rgba(38, 173, 169, 0.5);
+  }
+  50% {
+      box-shadow: 0 0 25px rgba(255, 159, 243, 0.8), 
+                  0 0 50px rgba(80, 64, 222, 0.8), 
+                  0 0 70px rgba(38, 173, 169, 0.8);
+  }
+}
+
+
+
+.column-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.column-heading-2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.features-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.features-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.vibrant-list li {
+  font-weight: bold;
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; 
+}
+
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 12px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff6b6b, #ff9ff3, #38ada9);
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 159, 243, 0.5), 
+              0 0 30px rgba(80, 64, 222, 0.5), 
+              0 0 45px rgba(38, 173, 169, 0.5);
+}
+
+
+.learn-more-btn:hover {
+  box-shadow: 0 0 25px rgba(255, 159, 243, 0.8), 
+              0 0 50px rgba(80, 64, 222, 0.8), 
+              0 0 70px rgba(38, 173, 169, 0.8);
+  transform: translateY(-5px);
+}
+
+
+.learn-more-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  z-index: -1;
+  transition: all 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.learn-more-btn:hover::before {
+  transform: scaleX(1);
+}
+
