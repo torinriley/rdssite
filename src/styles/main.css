@@ -383,11 +383,11 @@ html, body {
 
 
 .footer {
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   padding: 20px;
   text-align: center;
   position: relative;
-  color: #f0f0f0; /* Light text color */
+  color: #f0f0f0; 
 }
 
 .footer-content {
@@ -395,7 +395,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Space between the logo and the text */
+  gap: 15px; 
 }
 
 .footer-links {
@@ -411,7 +411,7 @@ html, body {
 
 .footer-links a {
   text-decoration: none;
-  color: #f0f0f0; /* Light text color for links */
+  color: #f0f0f0; 
 }
 
 .footer-links a:hover {
@@ -421,20 +421,98 @@ html, body {
 }
 
 .footer-logo {
-  width: 24px; /* Adjust the size as needed */
+  width: 24px; 
   height: 24px;
-  vertical-align: middle; /* Align the image vertically with text */
-  filter: invert(100%); /* Invert the logo color for dark theme */
+
+  filter: invert(100%); 
 }
 
 .github-link {
   display: inline-block;
   text-decoration: none;
-  margin-right: 10px; /* Space between the logo and text */
+  margin-right: 10px;
 }
 
 .footer-content p, .footer-links, .github-link {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+}
+
+
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.expand-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.expand-button button {
+  background: linear-gradient(90deg, #6a89cc, #ff9ff3);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(80, 64, 222, 0.5);
+  transition: all 0.3s ease;
+}
+
+.expand-button button:hover {
+  box-shadow: 0 4px 15px rgba(80, 64, 222, 0.5), 
+              0 0 20px rgba(80, 64, 222, 0.7), 
+              0 0 40px rgba(255, 159, 243, 0.6);
+}
+
+.modal {
+
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  color: black;
+}
+
+
+.close {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
