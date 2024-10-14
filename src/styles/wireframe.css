@@ -187,3 +187,44 @@
     opacity: 0.6;
     transition: background-color 0.3s ease;
 }
+
+
+.caret-dot {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+    background-size: 300% 300%;
+    animation: gradient-animation 6s infinite, blink 0.8s infinite;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+                0 0 10px rgba(255, 107, 107, 0.3),
+                0 0 15px rgba(243, 166, 131, 0.4),
+                0 0 20px rgba(255, 159, 243, 0.5);
+}
+
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.caret-fade-out {
+    animation: fade-out 1s forwards;
+}

@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     padding: 0;
@@ -197,18 +196,7 @@ html, body {
 }
 
 
-.timeline-content:hover {
-    box-shadow: 0 0 10px rgba(80, 64, 222, 0.7), 
-                0 0 20px rgba(255, 159, 243, 0.6), 
-                0 0 30px rgba(80, 64, 222, 0.9), 
-                0 0 40px rgba(255, 159, 243, 0.8);
-}
 
-
-.timeline-content:hover {
-    transform: scale(1.05);
-    transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
-}
 
 
 .button {
@@ -312,4 +300,54 @@ html, body {
   margin: 0;
 }
 
-  
+  /* CTA Section */
+.cta-section {
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  color: #ecf0f1;
+  max-width: 900px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
+                    0 0 60px rgba(255, 107, 107, 0.6), 
+                    0 0 90px rgba(243, 166, 131, 0.8), 
+                    0 0 120px rgba(255, 159, 243, 1);
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.cta-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #dcdcdc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(255, 159, 243, 0.4);
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #ff9ff3, #f3a683, #ff6b6b);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 159, 243, 0.6), 
+              0 0 20px rgba(80, 64, 222, 0.8);
+}
