@@ -2,11 +2,25 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #1a1a2e, #0b0619);
+    background: linear-gradient(black, #1a1a2e);
     font-family: 'Arial', sans-serif;
     color: #ecf0f1;
     scroll-behavior: smooth;
     overflow-x: hidden;
+  }
+  
+  .solid-navbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 .active {
     background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
@@ -17,19 +31,6 @@ html, body {
     background-size: 300% 300%;
 }
 
-.solid-navbar {
-    width: 100%;
-    height: 70px;
-    padding: 0 20px;
-    background: linear-gradient(120deg, #0b0619, #1a1a2e);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   
   .navbar-logo {
     display: flex;
@@ -127,7 +128,9 @@ html, body {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(120deg, #0b0619, #1a1a2e);
+    background: linear-gradient(black, #1a1a2e);
+    background-size: 100% 100%;
+    background-attachment: fixed; /* Ensure the gradient is always in view */
     display: flex;
     flex-direction: column;
     justify-content: center;
