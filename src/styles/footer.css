@@ -13,7 +13,6 @@
   gap: 15px;
 }
 
-/* Custom Button with sliding black card effect */
 .Btn {
   width: 45px;
   height: 45px;
@@ -26,7 +25,7 @@
   border-radius: 7px;
   cursor: pointer;
   transition: all 0.3s ease;
-  overflow: hidden; /* Ensure elements don't overflow the button area */
+  overflow: hidden; 
 }
 
 .svgContainer {
@@ -37,7 +36,7 @@
   justify-content: center;
   background-color: transparent;
   transition: all 0.3s ease;
-  z-index: 1; /* Keep the SVG on top */
+  z-index: 1;
 }
 
 .BG {
@@ -49,12 +48,12 @@
   z-index: -1;
   border-radius: 10px;
   pointer-events: none;
-  transition: transform 0.5s ease; /* Smooth transformation */
-  transform: translateX(-100%); /* Initially hidden (off-screen left) */
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
 }
 
 .Btn:hover .BG {
-  transform: translateX(0); /* Slide in from the left on hover */
+  transform: translateX(0);
 }
 
 .Btn:hover .svgContainer {
@@ -62,7 +61,6 @@
   backdrop-filter: blur(4px);
 }
 
-/* Join Us icon specific styling */
 .join-us-logo {
   width: 24px;
   height: 24px;
