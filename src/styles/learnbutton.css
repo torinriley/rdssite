@@ -1,6 +1,6 @@
 .learn-more-btn {
-    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
-    color: white;
+    background: transparent;
+    color: #f0f0f0;
     font-family: inherit;
     padding: 0.35em;
     padding-left: 1.2em;
@@ -11,16 +11,19 @@
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
- 
     overflow: hidden;
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
     cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .learn-more-btn .icon {
-    background: rgba(255, 255, 255, 0.2);
+    background: white;
     margin-left: 1em;
     position: absolute;
     display: flex;
@@ -29,21 +32,19 @@
     height: 2.2em;
     width: 2.2em;
     border-radius: 0.7em;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: grey;
     right: 0.3em;
     transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .learn-more-btn:hover .icon {
     width: calc(100% - 0.6em);
 }
-z
+
 .learn-more-btn .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
-    color: #7b52b9;
+    color: #f0f0f0;
 }
 
 .learn-more-btn:hover .icon svg {
@@ -53,4 +54,3 @@ z
 .learn-more-btn:active .icon {
     transform: scale(0.95);
 }
-
