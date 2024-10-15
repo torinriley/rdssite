@@ -278,6 +278,8 @@ html, body {
     padding: 40px;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
+
 }
 
 .call-to-action h2 {
@@ -529,4 +531,35 @@ html, body {
         border-right-color: transparent;
     }
 }
+.launch-announcement-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto; 
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2); 
+}
 
+.launch-announcement-content {
+    text-align: center;
+}
+
+.launch-announcement-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9ff3;
+}
+
+.launch-announcement-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.launch-announcement-content strong {
+    color: #ff9ff3; 
+}
