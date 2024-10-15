@@ -2,19 +2,18 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom, #1a1a2e, #0b0619);
+    background: linear-gradient(black, #1a1a2e);
     font-family: 'Arial', sans-serif;
     color: #ecf0f1;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-
-.solid-navbar {
+  }
+  
+  .solid-navbar {
     width: 100%;
     height: 70px;
     padding: 0 20px;
-    background: #1a1a2e;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +21,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
 
 .navbar-logo {
     display: flex;
