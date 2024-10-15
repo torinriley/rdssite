@@ -51,7 +51,7 @@ To run the website locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/torinriley/rdssite-html-.git
+   git clone https://github.com/torinriley/rdssite.git
 
 
 
