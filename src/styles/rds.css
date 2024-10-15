@@ -402,42 +402,6 @@ html, body {
     to { opacity: 1; }
 }
 
-.learn-more-btn {
-    border: 2px solid transparent;
-    background: none;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.learn-more-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
-    z-index: -1;
-    transition: all 0.4s ease;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.learn-more-btn:hover::before {
-    transform: scaleX(1);
-}
-
-.learn-more-btn:hover {
-    color: white;
-}
-
-
 
 .loading-section {
     display: flex;
@@ -538,17 +502,16 @@ html, body {
 }
 
 
-/* Keep the existing styles for morphism-container, window-header, chat-line, etc. */
 
 .chat-line.ai-answer {
     padding: 10px;
     border-radius: 8px;
-    max-width: 60%; /* Adjusted for longer answers */
+    max-width: 60%;
     margin-bottom: 20px;
     align-self: flex-start;
 }
 
-/* Typing Animation */
+
 @keyframes typing {
     0% {
         width: 0;
