@@ -13,6 +13,7 @@
   gap: 15px;
 }
 
+/* Custom Button with sliding black card effect */
 .Btn {
   width: 45px;
   height: 45px;
@@ -24,7 +25,8 @@
   position: relative;
   border-radius: 7px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Ensure elements don't overflow the button area */
 }
 
 .svgContainer {
@@ -34,9 +36,8 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  border-radius: 10px;
-  transition: all 0.3s;
-  border: 1px solid rgba(156, 156, 156, 0.466);
+  transition: all 0.3s ease;
+  z-index: 1; /* Keep the SVG on top */
 }
 
 .BG {
@@ -48,12 +49,12 @@
   z-index: -1;
   border-radius: 10px;
   pointer-events: none;
-  transition: all 0.3s;
+  transition: transform 0.5s ease; /* Smooth transformation */
+  transform: translateX(-100%); /* Initially hidden (off-screen left) */
 }
 
 .Btn:hover .BG {
-  transform: rotate(35deg);
-  transform-origin: bottom;
+  transform: translateX(0); /* Slide in from the left on hover */
 }
 
 .Btn:hover .svgContainer {
@@ -61,25 +62,13 @@
   backdrop-filter: blur(4px);
 }
 
-.github-link img,
+/* Join Us icon specific styling */
 .join-us-logo {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-}
+  padding-left: 10px; 
 
-.join-us-link {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  color: #f0f0f0;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.join-us-link:hover {
-  color: #ff9ff3;
 }
 
 .footer-links {
