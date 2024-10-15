@@ -130,7 +130,7 @@ html, body {
     min-height: 100vh;
     background: linear-gradient(black, #1a1a2e);
     background-size: 100% 100%;
-    background-attachment: fixed; /* Ensure the gradient is always in view */
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
     justify-content: center;
