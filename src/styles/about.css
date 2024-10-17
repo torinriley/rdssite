@@ -255,23 +255,12 @@ html, body {
   max-width: 900px;
   margin-top: 200px;
   margin-bottom: 100px;
-  animation: pulsate 3s infinite;  
-}
-
-@keyframes pulsate {
-    0%, 100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
                     0 0 40px rgba(255, 107, 107, 0.4), 
                     0 0 60px rgba(243, 166, 131, 0.6), 
                     0 0 80px rgba(255, 159, 243, 0.8);
     }
-    50% {
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
-                    0 0 60px rgba(255, 107, 107, 0.6), 
-                    0 0 90px rgba(243, 166, 131, 0.8), 
-                    0 0 120px rgba(255, 159, 243, 1);
-    }
-}
+  
 
 .cta-content h2 {
   font-size: 36px;
