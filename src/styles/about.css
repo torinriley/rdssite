@@ -307,7 +307,7 @@ html, body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 40px;
+  padding: 60px;
   max-width: 600px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
