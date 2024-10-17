@@ -382,18 +382,13 @@ html, body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.coming-soon-timeline-content:hover {
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); 
-}
-
 .launch-progress-container {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 40px;
   backdrop-filter: blur(20px); 
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   color: #fff; 
   text-align: center;
