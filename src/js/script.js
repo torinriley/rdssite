@@ -130,3 +130,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(timelineSection);
 });
+
+document.querySelector('.tooltip-button').addEventListener('click', function() {
+    const tooltip = document.getElementById('contribution-tooltip');
+    tooltip.style.display = tooltip.style.display === 'block' ? 'none' : 'block';
+});
+
+function toggleTooltip() {
+    const tooltip = document.getElementById('contribution-tooltip');
+    tooltip.style.display = 'none';
+}
