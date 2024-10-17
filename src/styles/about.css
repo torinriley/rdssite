@@ -361,14 +361,14 @@ html, body {
 .coming-soon-timeline-container {
   margin-top: 50px;
   text-align: left;
-  color: #ecf0f1; /* Lighter text for better contrast */
+  color: #ecf0f1
 }
 
 .coming-soon-timeline {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
-  opacity: 0.8; /* Subtle transparency for 'coming soon' effect */
+  opacity: 0.8;
 }
 
 .coming-soon-timeline:before {
@@ -378,7 +378,7 @@ html, body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(180deg, #6a89cc, #38ada9); /* Softer gradient colors */
+  background: linear-gradient(180deg, #6a89cc, #38ada9);
   border-radius: 2px;
   height: 0; 
   animation: none;
@@ -391,11 +391,11 @@ html, body {
 @keyframes softFillLineSoon {
   0% {
       height: 0;
-      background: linear-gradient(180deg, #6a89cc, #38ada9); /* Start with soft colors */
+      background: linear-gradient(180deg, #6a89cc, #38ada9); 
   }
   100% {
       height: 100%;
-      background: linear-gradient(180deg, #ff9ff3, #f3a683); /* Gradually change to brighter colors */
+      background: linear-gradient(180deg, #ff9ff3, #f3a683);
   }
 }
 
@@ -410,25 +410,25 @@ html, body {
   flex: 0 0 100px;
   font-size: 18px;
   font-weight: bold;
-  color: #95a5a6; /* Muted color for future date */
+  color: #95a5a6; 
   transition: transform 0.3s ease;
-  font-style: italic; /* Subtle emphasis for 'future' dates */
+  font-style: italic; 
 }
 
 .coming-soon-timeline-content {
-  background: rgba(100, 100, 140, 0.1); /* Lighter, more transparent background */
+  background: rgba(100, 100, 140, 0.1);
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for subtlety */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
   flex: 1;
   margin-left: 20px;
   transition: background 0.3s ease, box-shadow 0.4s ease-in-out;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border for glassmorphism */
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .coming-soon-timeline-content:hover {
-  background: rgba(255, 255, 255, 0.05); /* Light hover effect */
-  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); /* Slightly increased hover shadow */
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2); 
 }
