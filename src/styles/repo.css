@@ -130,9 +130,6 @@
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(90deg, #ff9ff3, #6a89cc, #38ada9); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 0;
     padding-bottom: 10px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.2); 

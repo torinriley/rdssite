@@ -465,7 +465,7 @@ html, body {
   box-shadow: 0 0 15px rgba(255, 159, 243, 0.5), 
               0 0 30px rgba(80, 64, 222, 0.5), 
               0 0 45px rgba(38, 173, 169, 0.5);
-  transition: box-shadow 0.4s ease; /* Smooth transition for box shadow */
+  transition: box-shadow 0.4s ease; 
 }
 
 .learn-more-btn:hover ~ .rds-column {
@@ -574,5 +574,66 @@ html, body {
 
 .learn-more-btn:hover::before {
   transform: scaleX(1);
+}
+
+.cta-glass {
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  color: #ecf0f1;
+  max-width: 900px;
+  margin-top: 75px;
+  margin-bottom: 200px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: grey;
+}
+
+.cta-glass h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-glass p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #dcdcdc;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 
+              0 0 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3), 
+              0 0 15px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2), 
+              0 0 10px rgba(0, 0, 0, 0.15);
 }
 

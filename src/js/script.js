@@ -140,3 +140,4 @@ function toggleTooltip() {
     const tooltip = document.getElementById('contribution-tooltip');
     tooltip.style.display = 'none';
 }
+
