@@ -5,7 +5,6 @@
     padding: 40px 0;
     max-width: 1000px;
     margin: 0 auto;
-
 }
 
 .repository-link {
@@ -18,15 +17,20 @@
     padding: 30px;
     background-color: #1a1a2e;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border: 3px solid transparent;
     padding-left: 50px;
+    perspective: 1500px;
+    transform-style: preserve-3d;
 }
+
 .repository-card:hover {
-    transform: scale(1.05);
+    transform: rotateY(15deg) rotateX(10deg) translateZ(80px); 
+    box-shadow: 0px 12px 40px rgba(255, 255, 255, 0.2), 
+                0 6px 20px rgba(0, 0, 0, 0.4); 
     animation: border-gradient 3s infinite;
 }
 
@@ -50,6 +54,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: text-gradient 3s infinite;
+    transform: translateZ(140px); 
 }
 
 @keyframes text-gradient {
@@ -65,26 +70,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.repo-header h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.public-tag {
-    background-color: #4c4c4c;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 15px;
-    font-size: 0.8rem;
+    transform: translateZ(120px); 
 }
 
 .repo-description {
     margin: 15px 0;
     font-size: 1rem;
     color: #bdc3c7;
+    transform: translateZ(100px); 
 }
 
 .repo-meta {
@@ -92,6 +85,7 @@
     justify-content: space-between;
     font-size: 0.85rem;
     color: #95a5a6;
+    transform: translateZ(90px); 
 }
 
 .language-color {
@@ -118,13 +112,10 @@
     background-color: #c04417;
 }
 
-
-
 .popular-repositories-container {
     text-align: center; 
     margin-bottom: 40px;
 }
-
 
 .popular-repositories-heading {
     font-size: 2.5rem;
@@ -135,5 +126,3 @@
     border-bottom: 3px solid rgba(255, 255, 255, 0.2); 
     display: inline-block;
 }
-
-
