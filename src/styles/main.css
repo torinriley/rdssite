@@ -164,7 +164,7 @@ html, body {
   font-weight: 700;
   text-align: center;
   margin-top: 20px;
-  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
