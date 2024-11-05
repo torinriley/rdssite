@@ -39,27 +39,20 @@ window.onclick = function(event) {
     });
 };
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const typingText = document.querySelector(".typing-text");
     const thinkingSection = document.querySelector(".loading-section");
 
-    
     const caretDot = document.createElement("div");
     caretDot.classList.add("caret-dot");
 
-    
     const part1 = `RDS AI is an open-source project that pushes the boundaries of AI, 
 enabling machines to adapt, learn, and evolve based on `;
     const part2 = `reflective dialogue systems.`;
 
-    
     const gradientSpan = document.createElement('span');
     gradientSpan.classList.add('gradient-text');
 
-    
     function typeText(text, element, delay = 50, callback) {
         let index = 0;
         element.style.display = "block";
@@ -76,7 +69,6 @@ enabling machines to adapt, learn, and evolve based on `;
         type();
     }
 
-    
     function typeGradientText(text, element, delay = 50, callback) {
         let index = 0;
         function type() {
@@ -92,25 +84,20 @@ enabling machines to adapt, learn, and evolve based on `;
         type();
     }
 
-    
     setTimeout(() => {
         thinkingSection.style.display = "none";
         
-        
         typeText(part1, typingText, 50, () => {
-           
             typingText.appendChild(gradientSpan);
             typeGradientText(part2, gradientSpan);
         });
 
-    }, 3000);
+    }, 1500); 
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const timelineSection = document.querySelector(".timeline");
 
-    
     const options = {
         root: null, 
         threshold: 0.5
@@ -119,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                
                 setTimeout(() => {
                     entry.target.classList.add('animate-timeline');
                 }, 0); 
@@ -140,4 +126,3 @@ function toggleTooltip() {
     const tooltip = document.getElementById('contribution-tooltip');
     tooltip.style.display = 'none';
 }
-
