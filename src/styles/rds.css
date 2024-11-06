@@ -305,22 +305,10 @@ html, body {
     border-radius: 15px;  
     position: relative;  
     border: 1px solid rgba(255, 255, 255, 0.2); 
-    animation: pulsate 3s infinite;  
-}
-
-@keyframes pulsate {
-    0%, 100% {
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 
                     0 0 40px rgba(255, 107, 107, 0.4), 
                     0 0 60px rgba(243, 166, 131, 0.6), 
                     0 0 80px rgba(255, 159, 243, 0.8);
-    }
-    50% {
-        box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 
-                    0 0 60px rgba(255, 107, 107, 0.6), 
-                    0 0 90px rgba(243, 166, 131, 0.8), 
-                    0 0 120px rgba(255, 159, 243, 1);
-    }
 }
 
 .open-source-title {
@@ -518,4 +506,50 @@ html, body {
 
 .launch-announcement-content strong {
     color: #ff9ff3; 
+}
+
+
+.bento-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 30px;
+}
+
+.bento-box {
+    flex: 1;
+    padding: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1); 
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.bento-box:first-child {
+    border-left: none;
+}
+
+.bento-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.bento-box p {
+    font-size: 1em;
+    color: #d1d1d1;
+    margin-bottom: 20px;
+}
+
+.bento-box a {
+    font-size: 1em;
+    color: #4d8cf7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.bento-box a:hover {
+    color: #a6c1ff;
 }

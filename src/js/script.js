@@ -69,7 +69,7 @@ enabling machines to adapt, learn, and evolve based on `;
         type();
     }
 
-    function typeGradientText(text, element, delay = 50, callback) {
+    function typeGradientText(text, element, delay = 50) {
         let index = 0;
         function type() {
             if (index < text.length) {

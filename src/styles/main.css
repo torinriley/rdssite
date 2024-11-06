@@ -2,13 +2,12 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: linear-gradient(black, #1a1a2e);
+  background: linear-gradient(black, #0c0c16 ,  #1a1a2e);
   font-family: 'Arial', sans-serif;
   color: #ecf0f1;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 .solid-navbar {
   width: 100%;
   height: 70px;
@@ -28,8 +27,14 @@ html, body {
   align-items: center;
 }
 
-
-
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  color: #ecf0f1;
+  text-align: left;
+}
 
 .navbar-logo img {
   height: 50px;
@@ -69,11 +74,17 @@ html, body {
   color: rgb(150, 150, 150);
 }
 
+.solid-navbar ul li a.rds-link:hover {
+  background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .large-text {
   font-size: 75px;
   font-weight: 700;
   margin-top: 300px;
-  text-align: center;
+  text-align: left;
   position: relative;
   transition: transform 0.3s ease-out;
 }
@@ -81,7 +92,7 @@ html, body {
 .gradient-text {
   font-size: 36px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
   background: linear-gradient(90deg, #ff6b6b, #f3a683, #ff9ff3);
   background-clip: text;
@@ -225,16 +236,12 @@ html, body {
   padding: 30px;
   background: rgba(30, 32, 50, 0.95); 
   border-radius: 15px;
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5), 
-              0 0 20px rgba(80, 64, 222, 0.7), 
-              0 0 40px rgba(255, 159, 243, 0.6); 
   font-size: 18px;
   line-height: 1.6;
   color: #f1f1f1;
   text-align: left;
   opacity: 1;
   transform: translateY(0);
-  box-shadow: 0 0 120px rgba(255, 159, 243, 1);
     }
  
 
@@ -264,67 +271,6 @@ html, body {
               0 0 20px rgba(80, 64, 222, 0.8), 
               0 0 40px rgba(255, 159, 243, 0.8);
   border: 2px solid rgba(255, 159, 243, 0.6);
-}
-
-
-.accordion {
-  max-width: 800px;
-  margin: 20px auto;
-  margin-top: 20px;
-  border-top: 1px solid #4e4e5c;
-  margin-bottom: 200px;
-}
-
-.accordion-item {
-  border-bottom: 1px solid #4e4e5c;
-  margin-bottom: 20px; 
-  border-radius: 15px; 
-  overflow: hidden; 
-}
-
-.accordion-item:first-child {
-  border-top: none;
-}
-
-.accordion-checkbox {
-  display: none;
-}
-
-.accordion-header {
-  display: block;
-  padding: 15px 20px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ecf0f1;
-  background-color: #1a1a2e;
-  transition: background 0.3s ease-in-out;
-  border-radius: 15px 15px 0 0;
-}
-
-.accordion-header:hover {
-  background-color: #2b2b3a;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease-out, padding 0.6s ease-out;
-  background-color: rgba(40, 42, 58, 0.9);
-  padding: 0 20px;
-  border-radius: 0 0 15px 15px; 
-}
-
-.accordion-content p {
-  margin: 15px 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #f1f1f1;
-}
-
-.accordion-checkbox:checked + .accordion-header + .accordion-content {
-  max-height: 200px;
-  padding: 10px 20px;
 }
 
 
@@ -577,18 +523,18 @@ html, body {
 }
 
 .cta-glass {
+  background: rgba(40, 42, 58, 0.5); 
+  color: #f1f1f1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 50px auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   text-align: center;
-  color: #ecf0f1;
   max-width: 900px;
   margin-top: 75px;
   margin-bottom: 200px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: grey;
 }
 
